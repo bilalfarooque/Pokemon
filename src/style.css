@@ -4,7 +4,7 @@
     padding: 0;
     font-family: sans-serif;
 }
-
+/* header */
 .head-container{
     background-color: white;
     width: 100%;
@@ -26,7 +26,7 @@
    height: 62px;
 }
 
-.nav-item1{
+.head-item1{
     box-shadow: 0 0 7px 1px #666666;
     margin: 0 10px;
     border-right: 0;
@@ -36,12 +36,160 @@
 
 }
 
-.nav-item2{
+.head-item2{
     margin: 0 10px;
     border-right: solid 2px #dedede;
     padding: 9px 10px 8px 10px;
 }
 
-.nav-item{
+.head-item{
     padding: 9px 4px 8px 4px;
+}
+
+/* navbar */
+
+.nav-container{
+    width: 100%;
+    position: fixed;
+    top: 63px;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.navbar-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    
+}
+
+.navbar-links a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #464646;
+    font-size: 87.5%;
+    
+}
+
+.navbar-links a:hover{
+    color: #fff;
+}
+
+li.nav-item{
+    position: relative;
+}
+
+li.nav-item:after{
+    content:'';
+    height: 6px;
+    bottom: -2px;
+    width: 100%;
+    left: 0;
+    z-index: -3;
+    position: absolute;
+}
+
+li#link1.nav-item:after{
+    background-color: #919191;
+    border-radius: 0 0 0 8px;
+}
+li#link1.nav-item:hover{
+    background-color: #919191;  
+}
+
+li#link2.nav-item:after{
+    background-color: #E3350D;
+}
+
+li#link2.nav-item:hover{
+    background-color: #E3350D;
+}
+
+li#link3.nav-item:after{
+    background-color: #ee6b2f;
+}
+
+li#link3.nav-item:hover{
+    background-color: #ee6b2f; 
+}
+
+li#link4.nav-item:after{
+    background-color: #e6bc2f;
+}
+
+li#link4.nav-item:hover{
+    background-color: #e6bc2f;
+}
+
+li#link5.nav-item:after{
+    background-color: #4dad5b;
+}
+
+li#link5.nav-item:hover{
+    background-color: #4dad5b;
+}
+
+li#link6.nav-item:after{
+    background-color: #30a7d7;
+}
+
+li#link6.nav-item:hover{
+    background-color: #30a7d7;
+}
+
+li#link7.nav-item:after{
+    background-color: #1b53ba;
+    border-radius: 0 0 8px 0;
+}
+
+li#link7.nav-item:hover{
+    background-color: #1b53ba;
+}
+
+
+.nav-item{
+    padding: 16px 20px;
+}
+
+.nav-item i{
+    padding: 16px;
+}
+
+.user-dashboard{
+    position: fixed;
+    top: 250px;
+    left: 80px;
+
+}
+
+.signup {
+    background-color: #54b564;
+    font-size: 10px;
+    line-height: 10px;
+    
+}
+
+.signup a{
+    color: white;
+    text-decoration: none;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 5px;
+    justify-content: center;
+}
+
+.search a{
+    padding: 40px 20px;
+    background-color: ;
+
 }
