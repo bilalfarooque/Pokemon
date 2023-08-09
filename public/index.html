@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pokemon</title>
-  <link rel="stylesheet" href="../src/style.css">
 
+  <!-- font awesome icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -15,6 +15,17 @@
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <!-- Bootstrap icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- old bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- owl carousel min.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link type="text/css" rel="stylesheet" href="../src/style.css">
 </head>
 
 <body>
@@ -131,49 +142,52 @@
 
     <div class="hero">
 
-
       <div class="hero-container">
-        <div class="hero-wrapper container text-start">
-          <div class="hero-row row g-0">
-            <div class="left-box col-7 mx-3">
+        <div class="hero-wrapper container-fluid">
+          <div class="hero-row row">
+
+            <div class="left-box col-lg-8 col-md-12 col-sm-12">
 
               <div class="left-top-box row g-0">
-                <div class="card mb-3">
+
+                <div class="card col-lg-12 mb-3">
                   <img src="../public/assets/pokemon-d-hero.gif" class="card-img-top" alt="herogif">
                   <div class="card-body  bg-dark text-white rounded-bottom">
-                    <h4 class="card-text">Mark your calender for upcoming events</h4>
-                    <p class="card-text" >Prepare to face a Rillaboom with Normal as its Tera <br> Type in Pokemon Scarlet and
-                      Pokemon Violet black <br> crystal Tera Raid Battles. </p>
+                    <h5 class="card-text">Mark your calender for upcoming events</h5>
+                    <small class="card-text">Prepare to face a Rillaboom with Normal as its Tera <br> Type in Pokemon
+                      Scarlet and
+                      Pokemon Violet black <br> crystal Tera Raid Battles. </small>
                   </div>
                 </div>
 
               </div>
 
-              <div class="left-bot-box row g-0">
+              <div class="left-bot-box row g-0 gx-4">
 
-                <div class="card col-6 mb-3">
+                <div class="card col-lg-6 mb-3  border-0">
                   <img src="../public/assets/hero5.png" class="card-img-top" alt="herogif">
                   <div class="card-body text-white rounded-bottom" style="background-color: #30a7d7;">
-                    <h4 class="card-text">A Look at Some of <i>Scarlet & Violet-Paldea Evolved's</i> Most Beautiful Cards</h4>
+                    <h5 class="card-text">A Look at Some of <i>Scarlet & Violet-Paldea Evolved's</i> Most Beautiful
+                      Cards</h5>
                   </div>
                 </div>
 
-                <div class="card col-6 mb-3">
+                <div class="card col-lg-6 mb-3  border-0">
                   <img src="../public/assets/hero4.png" class="card-img-top" alt="herogif">
                   <div class="card-body text-white rounded-bottom" style="background-color: #4dad5b;">
-                    <h4 class="card-text">Bring Pokemon Trainer Style into Your Life</h4>
+                    <h5 class="card-text">Bring Pokemon Trainer Style into Your Life</h5>
                   </div>
                 </div>
 
               </div>
             </div>
 
-            <div class="right-box col-4 mx-3">
+            <div class="right-box col-lg-4 col-md-12 col-sm-12">
 
               <div class="card mb-3">
                 <img src="../public/assets/hero1.png" class="card-img-top" alt="hero1">
                 <div class="card-body text-white rounded-bottom" style="background-color: #ee6b2f;">
-                  <h4 class="card-text">Dive Into Pokemon TV</h4>
+                  <h5 class="card-text">Dive Into Pokemon TV</h5>
                 </div>
               </div>
 
@@ -184,7 +198,7 @@
                   </div>
                   <div class="col-md-6">
                     <div class="card-body text-white h-100 rounded-end" style="background-color: #e6bc2f;">
-                      <h4 class="card-text ">Build your world fantasy team</h4>
+                      <h5 class="card-text ">Build your world fantasy team</h5>
                     </div>
                   </div>
                 </div>
@@ -193,32 +207,358 @@
               <div class="card mb-3">
                 <img src="../public/assets/hero3.png" class="card-img-top" alt="hero1">
                 <div class="card-body text-white rounded-bottom" style="background-color: #855ac9;">
-                  <h4 class="card-text">Unleash the Rage of an Angry Grudge with Annihilape ex</h4>
+                  <h5 class="card-text">Unleash the Rage of an Angry Grudge with Annihilape ex</h5>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
-    </div>
 
-  </div>
+    <div class="container bg-dark">
 
-  <script src="script.js"></script>
+          <!-- <h5 class="text-secondary ms-5 "><b class=" p-3 pb-2 bg-dark rounded-top-2"> <span><i
+                  class="fa-solid fa-bullseye fa-x"></i></span> Featured Pokemon</b></h5> -->
+          <div class="slider">
+            <div class="owl-carousel owl-wrapper">
+  
+              <div class="slider-card">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="../public/assets/heros/absol-359.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body bg-dark text-white">
+                  <h4 class="card-text text-start p-2 mb-0">Absol</h4>
+                  <div class="add-text">
+                    <div class="cardline1 p-0 ms-2 mb-2 w-75 d-flex justify-content-between">
+                      <p class="m-0 p-0">Type</p>
+                      <p class="m-0 ps-2 pe-2 "
+                        style="background-color: orangered;border: 1px solid orangered; border-radius: 5px;">
+                        Fire</p>
+                    </div>
+                    <div class="cardline2 p-0 ms-2 w-75 d-flex justify-content-between">
+                      <p class="m-0 p-0">Abilities</p>
+                      <p class="m-0 p-0">Blaze</p>
+                    </div>
+                  </div>
+  
+  
+                </div>
+              </div>
+  
+              <div class="slider-card">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="../public/assets/heros/Darkrai-491.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body bg-dark text-white">
+                  <h4 class="card-text text-start p-2 mb-0">Darkrai</h4>
+                  <div class="add-text">
+                    <div class="cardline1 p-0 ms-2 mb-2 w-75 d-flex justify-content-between">
+                      <p class="m-0 p-0">Type</p>
+                      <p class="m-0 ps-2 pe-2 "
+                        style="background-color: orangered;border: 1px solid orangered; border-radius: 5px;">
+                        Fire</p>
+                    </div>
+                    <div class="cardline2 p-0 ms-2 w-75 d-flex justify-content-between">
+                      <p class="m-0 p-0">Abilities</p>
+                      <p class="m-0 p-0">Blaze</p>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+  
+              <div class="slider-card">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="../public/assets/heros/delibird-225.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body bg-dark text-white">
+                  <h4 class="card-text text-start p-2 mb-0">Delibird</h4>
+                  <div class="add-text">
+                    <div class="cardline1 p-0 ms-2 mb-2 w-75 d-flex justify-content-between">
+                      <p class="m-0 p-0">Type</p>
+                      <p class="m-0 ps-2 pe-2 "
+                        style="background-color: orangered;border: 1px solid orangered; border-radius: 5px;">
+                        Fire</p>
+                    </div>
+                    <div class="cardline2 p-0 ms-2 w-75 d-flex justify-content-between">
+                      <p class="m-0 p-0">Abilities</p>
+                      <p class="m-0 p-0">Blaze</p>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+  
+              <div class="slider-card">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="../public/assets/heros/dundunsparce-982.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body bg-dark text-white">
+                  <h4 class="card-text text-start p-2 mb-0">Dundunsparce</h4>
+                  <div class="add-text">
+                    <div class="cardline1 p-0 ms-2 mb-2 w-75 d-flex justify-content-between">
+                      <p class="m-0 p-0">Type</p>
+                      <p class="m-0 ps-2 pe-2 "
+                        style="background-color: orangered;border: 1px solid orangered; border-radius: 5px;">
+                        Fire</p>
+                    </div>
+                    <div class="cardline2 p-0 ms-2 w-75 d-flex justify-content-between">
+                      <p class="m-0 p-0">Abilities</p>
+                      <p class="m-0 p-0">Blaze</p>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+  
+              <div class="slider-card">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="../public/assets/heros/dusclops-356.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body bg-dark text-white">
+                  <h4 class="card-text text-start p-2 mb-0">Dusclops</h4>
+                  <div class="add-text">
+                    <div class="cardline1 p-0 ms-2 mb-2 w-75 d-flex justify-content-between">
+                      <p class="m-0 p-0">Type</p>
+                      <p class="m-0 ps-2 pe-2 "
+                        style="background-color: orangered;border: 1px solid orangered; border-radius: 5px;">
+                        Fire</p>
+                    </div>
+                    <div class="cardline2 p-0 ms-2 w-75 d-flex justify-content-between">
+                      <p class="m-0 p-0">Abilities</p>
+                      <p class="m-0 p-0">Blaze</p>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+  
+              <div class="slider-card">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="../public/assets/heros/Fuecoco-909.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body bg-dark text-white">
+                  <h4 class="card-text text-start p-2 mb-0">Fuecoco</h4>
+                  <div class="add-text">
+                    <div class="cardline1 p-0 ms-2 mb-2 w-75 d-flex justify-content-between">
+                      <p class="m-0 p-0">Type</p>
+                      <p class="m-0 ps-2 pe-2 "
+                        style="background-color: orangered;border: 1px solid orangered; border-radius: 5px;">
+                        Fire</p>
+                    </div>
+                    <div class="cardline2 p-0 ms-2 w-75 d-flex justify-content-between">
+                      <p class="m-0 p-0">Abilities</p>
+                      <p class="m-0 p-0">Blaze</p>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+  
+              <div class="slider-card">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="../public/assets/heros/Gible-443.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body bg-dark text-white">
+                  <h4 class="card-text text-start p-2 mb-0">Gible</h4>
+                  <div class="add-text">
+                    <div class="cardline1 p-0 ms-2 mb-2 w-75 d-flex justify-content-between">
+                      <p class="m-0 p-0">Type</p>
+                      <p class="m-0 ps-2 pe-2 "
+                        style="background-color: orangered;border: 1px solid orangered; border-radius: 5px;">
+                        Fire</p>
+                    </div>
+                    <div class="cardline2 p-0 ms-2 w-75 d-flex justify-content-between">
+                      <p class="m-0 p-0">Abilities</p>
+                      <p class="m-0 p-0">Blaze</p>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+  
+              <div class="slider-card">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="../public/assets/heros/Grotle-388.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body bg-dark text-white">
+                  <h4 class="card-text text-start p-2 mb-0">Grotle</h4>
+                  <div class="add-text">
+                    <div class="cardline1 p-0 ms-2 mb-2 w-75 d-flex justify-content-between">
+                      <p class="m-0 p-0">Type</p>
+                      <p class="m-0 ps-2 pe-2 "
+                        style="background-color: orangered;border: 1px solid orangered; border-radius: 5px;">
+                        Fire</p>
+                    </div>
+                    <div class="cardline2 p-0 ms-2 w-75 d-flex justify-content-between">
+                      <p class="m-0 p-0">Abilities</p>
+                      <p class="m-0 p-0">Blaze</p>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+  
+              <div class="slider-card">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="../public/assets/heros/shuckle-213.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body bg-dark text-white">
+                  <h4 class="card-text text-start p-2 mb-0">Shuckle</h4>
+                  <div class="add-text">
+                    <div class="cardline1 p-0 ms-2 mb-2 w-75 d-flex justify-content-between">
+                      <p class="m-0 p-0">Type</p>
+                      <p class="m-0 ps-2 pe-2 "
+                        style="background-color: orangered;border: 1px solid orangered; border-radius: 5px;">
+                        Fire</p>
+                    </div>
+                    <div class="cardline2 p-0 ms-2 w-75 d-flex justify-content-between">
+                      <p class="m-0 p-0">Abilities</p>
+                      <p class="m-0 p-0">Blaze</p>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+  
+              <div class="slider-card">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="../public/assets/heros/Sylveon-700.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body bg-dark text-white">
+                  <h4 class="card-text text-start p-2 mb-0">Sylveon</h4>
+                  <div class="add-text">
+                    <div class="cardline1 p-0 ms-2 mb-2 w-75 d-flex justify-content-between">
+                      <p class="m-0 p-0">Type</p>
+                      <p class="m-0 ps-2 pe-2 "
+                        style="background-color: orangered;border: 1px solid orangered; border-radius: 5px;">
+                        Fire</p>
+                    </div>
+                    <div class="cardline2 p-0 ms-2 w-75 d-flex justify-content-between">
+                      <p class="m-0 p-0">Abilities</p>
+                      <p class="m-0 p-0">Blaze</p>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+  
+            </div>
+          </div>
 
-  <!-- Font awesome -->
-  <script src="https://kit.fontawesome.com/8782d71a76.js" crossorigin="anonymous"></script>
+      </div>
 
-  <!-- bootstrap scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
-    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
+      <div class="hero-container">
+        <div class="hero-wrapper container-fluid text-start">
+          <div class="hero-row row">
+
+            <div class="left-box col-lg-4 col-md-12 col-sm-12">
+
+              <div class="card mb-3">
+                <img src="../public/assets/hero6.png" class="card-img-top" alt="hero1">
+                <div class="card-body text-white rounded-bottom" style="background-color:#4dad5b;">
+                  <h5 class="card-text">Scarlet & Violet—Obsidian Flames</h5>
+                  <p class="card-text">Get your first look at cards appearing in Scarlet & Violet—Obsidian Flames ,
+                    including newly discovered Pokémon and type-shifted Tera Pokémon ex.</p>
+                </div>
+              </div>
+
+              <div class="card mb-3">
+                <img src="../public/assets/hero7.png" class="card-img-top" alt="hero1">
+                <div class="card-body text-white rounded-bottom" style="background-color: #e6bc2f;">
+                  <h5 class="card-text">Play! Pokémon Prize Pack Series Three</h5>
+                  <p class="card-text">Pick up fun Prize Packs from local retailers at Play! Pokémon events.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="center-box col-lg-4 col-md-12 col-sm-12">
+
+              <div class="card mb-3">
+                <img src="../public/assets/hero8.png" class="card-img-top" alt="hero1">
+                <div class="card-body text-white rounded-bottom" style="background-color: #ee6b2f;">
+                  <h5 class="card-text">2023 Pokémon World Championships Fantasy Team is Now Live</h5>
+                  <p class="card-text">Build your Pokémon TCG and Pokémon VGC teams for a chance to win amazing prizes
+                    while watching the 2023 Pokémon World Championships.</p>
+                </div>
+              </div>
+
+
+              <div class="card mb-3">
+                <img src="../public/assets/hero9.png" class="card-img-top" alt="hero1">
+                <div class="card-body text-white rounded-bottom" style="background-color: #675945;">
+                  <h5 class="card-text">Infinite Smiles Await on Pasio with Drasna & Dragalge</h5>
+                  <p class="card-text">Charm your opponents as you unleash this sync pair’s powerful poison and
+                    devastating Dragon-type attacks.</p>
+                </div>
+              </div>
+            </div>
+            <div class="right-box col-lg-4 col-md-12 col-sm-12">
+
+              <div class="card mb-3">
+                <img src="../public/assets/hero10.png" class="card-img-top" alt="hero1">
+                <div class="card-body text-white rounded-bottom" style="background-color: #30a7d7;">
+                  <h5 class="card-text">Dive Into Pokemon TV</h5>
+                </div>
+              </div>
+
+              <div class="card mb-3">
+                <img src="../public/assets/hero11.png" class="card-img-top" alt="hero1">
+                <div class="card-body text-white rounded-bottom" style="background-color: #855ac9;">
+
+                  <h5 class="card-text">2023 Worlds Fantasy Team Breakdown: Pokémon VGC</h5>
+                  <p class="card-text">Get started on building your Pokémon VGC Fantasy Team with our breakdown of some
+                    of the most influential Pokémon in Regulation D.</p>
+                </div>
+              </div>
+
+              <div class="card mb-3">
+
+                <div class="card-body text-white rounded-top" style="background-color: #ee6b2f;">
+                  <h5 class="card-text">View All News</h5>
+                </div>
+                <div class="card-body text-white rounded-bottom" style="background-color: #30a7d7;">
+                  <p class="card-text">Keep up with all the latest developments!</p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <script src="script.js"></script>
+
+      <!-- Font awesome -->
+      <script src="https://kit.fontawesome.com/8782d71a76.js" crossorigin="anonymous"></script>
+
+      <!-- bootstrap scripts -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+        <!-- old bootstrap scripts -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+      <!-- owl carousel min.js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+      <!-- owl carousel javascript file -->
+      <script src="../script.js"></script>
 </body>
 
 </html>
