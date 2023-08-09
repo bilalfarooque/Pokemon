@@ -227,7 +227,7 @@ li#link7.nav-item:hover {
 .hero {
   background-image: url(../public/assets/container_bg.png);
   background-color: white;
-  width: 85%;
+  width: 92%;
   margin: auto;
 }
 
@@ -404,3 +404,22 @@ li#link7.nav-item:hover {
 .owl-dots .owl-dot.active {
   background: #f44336 !important;
 } */
+
+
+.footer{
+  width: 100%;
+  /* text-align: left!important ; */
+  background-color: #1f1f1f;
+}
+
+.container-footer{
+  max-width:  65%;
+  color: white;
+  align-items: center;
+  
+}
+.container-footer > ul,li,a{
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
