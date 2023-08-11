@@ -34,7 +34,7 @@ body {
   border-right: 0;
   border-left: 0;
   background-color: #fff;
-  padding: 9px 10px 8px 10px;
+  padding: 9px 2px 8px 40px;
 }
 
 .head-item2 {
@@ -43,8 +43,10 @@ body {
   padding: 9px 10px 8px 10px;
 }
 
+
 .head-item {
-  padding: 9px 4px 8px 4px;
+  padding: 10px 40px 4px 1px;
+  
 }
 
 /* navbar */
@@ -109,7 +111,7 @@ li.nav-item:after {
 }
 
 .nav-item p {
-  height: 30px;
+  height: 50px;
 }
 
 li#link1.nav-item:after {
@@ -222,6 +224,7 @@ li#link7.nav-item:hover {
   top: 150px;
   left: 0; */
   z-index: -2;
+  padding-bottom: 30px;
 }
 
 .hero {
