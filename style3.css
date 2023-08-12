@@ -32,6 +32,12 @@ button.btn {
   margin-left: auto;
 }
 
+.offcanvas-item{
+  background-image: url(./public/assets/container_bg.png);
+  border: 1px solid gray;
+  box-shadow: inset 0 0 2px 1px 
+}
+
 /* header ends */
 
 /* nav starts */
@@ -40,8 +46,98 @@ button.btn {
   background-color: white;
 }
 
+/*extra small screens */
+@media (max-width: 575px) {
+  .nav-container {
+    background-image: radial-gradient(#343434 15%, #1e1e1e 60%);
+  }
+
+  .navbar-nav {
+    height: 100vh;
+
+    background-image: url(./public/assets/body_bg.png);
+  }
+  .nav-container a p {
+    font-size: 0.625rem;
+  }
+
+  li.nav-item {
+    position: relative;
+  }
+
+  li.nav-item:after {
+    content: "";
+    z-index: 3;
+    position: absolute;
+    transform: rotate(90deg) translateY(4.2rem) translateX(0.7rem);
+  }
+
+  li.nav-item a {
+    position: relative;
+    width: 90vw;
+    height: 9vh;
+    display: flex;
+    left: 0;
+    margin: auto;
+    background-color: white;
+  }
+
+  li.nav-item a p {
+    text-align: left;
+    width: 80vw;
+    font-size: 1rem;
+    margin-bottom: 0;
+    padding-top: 0.9rem;
+    padding-left: 2.5625rem;
+  }
+
+  li.nav-item a i {
+    width: 10vw;
+    padding: 0.8rem;
+  }
+
+  li#link1.nav-item.active:after {
+    width: 9.2vh;
+    bottom: 39px;
+    left: 58px;
+  }
+  li#link2.nav-item:after {
+    width: 9.2vh;
+    bottom: 39px;
+    left: 58px;
+  }
+  li#link3.nav-item:after {
+    width: 9.2vh;
+    bottom: 39px;
+    left: 58px;
+  }
+  li#link4.nav-item:after {
+    width: 9.2vh;
+    bottom: 39px;
+    left: 58px;
+  }
+  li#link5.nav-item:after {
+    width: 9.2vh;
+    bottom: 39px;
+    left: 58px;
+  }
+  li#link6.nav-item:after {
+    width: 9.2vh;
+    bottom: 39px;
+    left: 58px;
+  }
+  li#link7.nav-item:after {
+    width: 9.2vh;
+    bottom: 39px;
+    left: 58px;
+  }
+}
+
+
+
+
 /* small screens */
-@media (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .nav-container {
     background-image: radial-gradient(#343434 15%, #1e1e1e 60%);
   }
