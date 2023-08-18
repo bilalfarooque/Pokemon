@@ -3,16 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pokemon</title>
 
-  <!-- font awesome icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
   <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"> -->
+
   <!-- Bootstrap icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
@@ -25,55 +23,120 @@
     integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <!-- Font awesome -->
+   <script src="https://kit.fontawesome.com/8782d71a76.js" crossorigin="anonymous"></script>
+
   <link type="text/css" rel="stylesheet" href="../src/style.css">
+
 </head>
 
 <body>
-  <!-- old header css -->
+  <!-- header starts -->
+
   <header>
-    <div class="head-container container-fluid">
+    <div class="head-container container-fluid ">
 
-      <div class="header-list mx-auto col-lg-8 col-md-8 col-sm-12">
+      <div class="header-list container-fluid d-lg-flex justify-content-lg-center h-auto">
 
-        <div class="head-item1  col-lg-2 col-md-2 col-sm-4">
-          <a class="head-link" href="#"><img src="./assets/icons/logo-pokemon-79x45.png" alt="pokemon logo"
-              class="img-fluid"></a>
+        <div
+          class="part1 my-lg-auto d-flex justify-content-start justify-content-md-start justify-content-sm-start row">
+
+          <div class="head-item1 p-lg-2 col-sm-3 col-md-3 col-3 h-auto">
+            <a class="head-link col d-flex justify-content-center align-items-center justify-content-md-center align-items-md-center justify-content-sm-center align-items-sm-center h-auto"
+              href="#"><img src="./assets/icons/logo-pokemon-79x45.png" alt="pokemon logo" class="h-auto"></a>
+          </div>
+          <div class="head-item2 p-lg-1 col-sm-3 col-md-3 col-3 h-auto">
+            <a class="head-link col d-flex justify-content-center align-items-center justify-content-md-center align-items-md-center justify-content-sm-center align-items-sm-center h-auto"
+              href="#"><img src="./assets/icons/logo-pokemoncenter-79x45.png" alt="centre" class="h-auto"></a>
+          </div>
+          <div class="head-item3 p-lg-1 col-sm-3 col-md-3 col-3 h-auto">
+            <a class="head-link col d-flex justify-content-center align-items-center justify-content-md-center align-items-md-center justify-content-sm-center align-items-sm-center h-auto"
+              href="#"><img src="./assets/icons/corporate-en.png" alt="center" class="h-auto"></a>
+          </div>
+
         </div>
-        <div class="head-item2 col-lg-2 col-md-2 col-sm-4">
-          <a class="head-link" href="#"><img src="./assets/icons/logo-pokemoncenter-79x45.png" alt="centre"
-              class="img-fluid"></a>
+
+        <div class="part2 d-lg-flex d-none">
+
+          <div class="head-item m-lg-2 p-lg-1">
+            <a class="head-lin " href="#"><img src="./assets/icons/sv02-gus-175-en.png" alt="center"
+                class="img-fluid "></a>
+          </div>
+          <div class="head-item m-lg-2 p-lg-1 ">
+            <a class="head-link" href="#"><img src="./assets/icons/scarlet-violet-175x50-en.jpg" alt="center"
+                class="img-fluid"></a>
+          </div>
+          <div class="head-item m-lg-2 p-lg-1">
+            <a class="head-link" href="#"><img src="./assets/icons/community-forums-175x50-en.png" alt="center"
+                class="img-fluid"></a>
+          </div>
+
         </div>
-        <div class="head-item3 col-lg-2 col-md-2 col-sm-4">
-          <a class="head-link" href="#"><img src="./assets/icons/corporate-en.png" alt="center" class="img-fluid"></a>
+
+        <!-- offcanvas -->
+        <button class="btn sidebar d-lg-none fa-2x py-0 px-2 btn-bd-light" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          >
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header mb-0 pb-0">
+
+            <button type="button" class="btn-close d-lg-none py-1 px-2 btn-bd-dark" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body w-100 d-flex justify-content-start align-content-start flex-column my-0">
+            <div class="offcanvas-item mx-0 my-1 ps-5 d-block justify-content-center w-75">
+              <img src="./assets/icons/scarlet-violet-175x50-en.jpg" alt="" class="m-auto justify-content-center w-75">
+            </div>
+            <div class="offcanvas-item mx-0 my-1 ps-5 d-block justify-content-center w-75">
+              <img src="./assets/icons/community-forums-175x50-en.png" alt=""
+                class="m-auto justify-content-center w-75">
+            </div>
+            <div class="offcanvas-item mx-0 my-1 ps-5 d-block justify-content-center w-75">
+              <img src="./assets/icons/unite-176x50.jpg" alt="" class="m-auto justify-content-center w-75">
+            </div>
+            <div class="offcanvas-item mx-0 my-1 ps-5 d-block justify-content-center w-75">
+              <img src="./assets/icons/promo-app-gallery-176x50.jpg" alt="" class="m-auto justify-content-center w-75">
+            </div>
+            <div class="offcanvas-item mx-0 my-1 ps-5 d-block justify-content-center w-75">
+              <img src="./assets/icons/sv02-gus-175-en.png" alt="" class="m-auto justify-content-center w-75">
+            </div>
+
+          </div>
         </div>
-  
-   
-        <div class="head-item col-lg-2 col-md-3  dropdown-menu-sm-end">
-          <a class="head-link" href="#"><img src="./assets/icons/sv02-gus-175-en.png" alt="center" class="img-fluid "></a>
-        </div>
-        <div class="head-item col-lg-2 col-md-3 dropdown-menu-sm-end">
-          <a class="head-link" href="#"><img src="./assets/icons/scarlet-violet-175x50-en.jpg" alt="center" class="img-fluid"></a>
-        </div>
-        <div class="head-item col-lg-2 col-md-3 dropdown-menu-sm-end">
-          <a class="head-link" href="#"><img src="./assets/icons/community-forums-175x50-en.png" alt="center" class="img-fluid"></a>
-        </div>
-  
       </div>
 
     </div>
 
-
   </header>
 
-  <!-- header ended -->
+  <!-- header ends -->
 
-  <nav>
-    <div class="nav-container">
-      <div class="navbar">
-        <ul class="navbar-links">
+  <!--- nav bar --->
+  <nav class="navbar navbar-expand-lg">
+    <div class="nav-container container-fluid">
 
+
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="bi bi-list fs-2"></i>
+      </button>
+      <a class="navbar-brand pointer-event d-lg-none d-md-block d-sm-block d-block text-center " href="#"><i
+          class="bi bi-person-circle text-white rounded-5 text-bg-secondary p-1"></i>
+        <p class="text-white text-center mb-0">Log In</p>
+      </a>
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-lg-auto m-md-auto m-sm-auto mb-2 mb-lg-0 text-center">
           <li class="nav-item active" id="link1">
-            <a href="#">
+            <a href="./index.html">
               <i class="fa-solid fa-shield-cat fa-2x"></i>
               <p>Home</p>
             </a>
@@ -120,14 +183,13 @@
               <p>News</p>
             </a>
           </li>
-
         </ul>
+
       </div>
     </div>
   </nav>
 
-
-  <!-- navbar ended -->
+  <!-- navbar ends -->
 
   <!-- <div class="user-dashboard">
     <div class="drawer">
@@ -146,6 +208,9 @@
       </div>
     </div>
   </div> -->
+
+  <!-- main section starts -->
+
   <main>
     <div class="main">
 
@@ -225,10 +290,9 @@
           </div>
         </div>
 
-        <div class="container bg-dark">
+        <div class="hero-slider container-fluid bg-dark">
 
-          <!-- <h5 class="text-secondary ms-5 "><b class=" p-3 pb-2 bg-dark rounded-top-2"> <span><i
-                  class="fa-solid fa-bullseye fa-x"></i></span> Featured Pokemon</b></h5> -->
+          <h5 class="text-secondary ms-5 "><b class=" p-3 pb-2 bg-dark rounded-top-2"> <span><i class="fa-solid fa-bullseye fa-x"></i></span> Featured Pokemon</b></h5>
           <div class="slider">
             <div class="owl-carousel owl-wrapper">
 
@@ -237,15 +301,15 @@
                   <img src="../public/assets/heros/absol-359.png" class="card-img-top" alt="...">
                 </div>
                 <div class="card-body bg-dark text-white">
-                  <h4 class="card-text text-start p-2 mb-0">Absol</h4>
+                  <h6 class="card-text text-start p-2 mb-0">Absol</h6>
                   <div class="add-text">
-                    <div class="cardline1 p-0 ms-2 mb-2 w-75 d-flex justify-content-between">
-                      <p class="m-0 p-0">Type</p>
+                    <div class="cardline1 p-0 ms-4 mb-2 w-50 d-flex justify-content-between">
+                      <p class="m-0 p-0"> Type</p>
                       <p class="m-0 ps-2 pe-2 "
                         style="background-color: orangered;border: 1px solid orangered; border-radius: 5px;">
                         Fire</p>
                     </div>
-                    <div class="cardline2 p-0 ms-2 w-75 d-flex justify-content-between">
+                    <div class="cardline2 p-0 ms-4 w-50 d-flex justify-content-between">
                       <p class="m-0 p-0">Abilities</p>
                       <p class="m-0 p-0">Blaze</p>
                     </div>
@@ -255,20 +319,20 @@
                 </div>
               </div>
 
-              <div class="slider-card">
+              <div class="slider-card w-auto">
                 <div class="d-flex justify-content-center align-items-center">
                   <img src="../public/assets/heros/Darkrai-491.png" class="card-img-top" alt="...">
                 </div>
                 <div class="card-body bg-dark text-white">
-                  <h4 class="card-text text-start p-2 mb-0">Darkrai</h4>
+                  <h6 class="card-text text-start p-2 mb-0">Darkrai</h6>
                   <div class="add-text">
-                    <div class="cardline1 p-0 ms-2 mb-2 w-75 d-flex justify-content-between">
-                      <p class="m-0 p-0">Type</p>
+                    <div class="cardline1 p-0 ms-4 mb-2 w-50 d-flex justify-content-between">
+                      <p class="m-0 p-0"> Type</p>
                       <p class="m-0 ps-2 pe-2 "
-                        style="background-color: orangered;border: 1px solid orangered; border-radius: 5px;">
-                        Fire</p>
+                        style="background-color: #4dad5b;border: 1px solid #4dad5b; border-radius: 5px;">
+                        grass</p>
                     </div>
-                    <div class="cardline2 p-0 ms-2 w-75 d-flex justify-content-between">
+                    <div class="cardline2 p-0 ms-4 w-50 d-flex justify-content-between">
                       <p class="m-0 p-0">Abilities</p>
                       <p class="m-0 p-0">Blaze</p>
                     </div>
@@ -277,20 +341,20 @@
                 </div>
               </div>
 
-              <div class="slider-card">
+              <div class="slider-card w-auto">
                 <div class="d-flex justify-content-center align-items-center">
                   <img src="../public/assets/heros/delibird-225.png" class="card-img-top" alt="...">
                 </div>
                 <div class="card-body bg-dark text-white">
-                  <h4 class="card-text text-start p-2 mb-0">Delibird</h4>
+                  <h6 class="card-text text-start p-2 mb-0">Delibird</h6>
                   <div class="add-text">
-                    <div class="cardline1 p-0 ms-2 mb-2 w-75 d-flex justify-content-between">
-                      <p class="m-0 p-0">Type</p>
+                    <div class="cardline1 p-0 ms-4 mb-2 w-50 d-flex justify-content-between">
+                      <p class="m-0 p-0"> Type</p>
                       <p class="m-0 ps-2 pe-2 "
                         style="background-color: orangered;border: 1px solid orangered; border-radius: 5px;">
                         Fire</p>
                     </div>
-                    <div class="cardline2 p-0 ms-2 w-75 d-flex justify-content-between">
+                    <div class="cardline2 p-0 ms-4 w-50 d-flex justify-content-between">
                       <p class="m-0 p-0">Abilities</p>
                       <p class="m-0 p-0">Blaze</p>
                     </div>
@@ -299,20 +363,20 @@
                 </div>
               </div>
 
-              <div class="slider-card">
+              <div class="slider-card w-auto">
                 <div class="d-flex justify-content-center align-items-center">
                   <img src="../public/assets/heros/dundunsparce-982.png" class="card-img-top" alt="...">
                 </div>
                 <div class="card-body bg-dark text-white">
-                  <h4 class="card-text text-start p-2 mb-0">Dundunsparce</h4>
+                  <h6 class="card-text text-start p-2 mb-0">Dundun</h6>
                   <div class="add-text">
-                    <div class="cardline1 p-0 ms-2 mb-2 w-75 d-flex justify-content-between">
-                      <p class="m-0 p-0">Type</p>
+                    <div class="cardline1 p-0 ms-4 mb-2 w-50 d-flex justify-content-between">
+                      <p class="m-0 p-0"> Type</p>
                       <p class="m-0 ps-2 pe-2 "
-                        style="background-color: orangered;border: 1px solid orangered; border-radius: 5px;">
-                        Fire</p>
+                        style="background-color: #e6bc2f;border: 1px solid #e6bc2f; border-radius: 5px;">
+                        flame</p>
                     </div>
-                    <div class="cardline2 p-0 ms-2 w-75 d-flex justify-content-between">
+                    <div class="cardline2 p-0 ms-4 w-50 d-flex justify-content-between">
                       <p class="m-0 p-0">Abilities</p>
                       <p class="m-0 p-0">Blaze</p>
                     </div>
@@ -321,20 +385,20 @@
                 </div>
               </div>
 
-              <div class="slider-card">
+              <div class="slider-card w-auto">
                 <div class="d-flex justify-content-center align-items-center">
                   <img src="../public/assets/heros/dusclops-356.png" class="card-img-top" alt="...">
                 </div>
                 <div class="card-body bg-dark text-white">
-                  <h4 class="card-text text-start p-2 mb-0">Dusclops</h4>
+                  <h6 class="card-text text-start p-2 mb-0">Dusclops</h6>
                   <div class="add-text">
-                    <div class="cardline1 p-0 ms-2 mb-2 w-75 d-flex justify-content-between">
-                      <p class="m-0 p-0">Type</p>
+                    <div class="cardline1 p-0 ms-4 mb-2 w-50 d-flex justify-content-between">
+                      <p class="m-0 p-0"> Type</p>
                       <p class="m-0 ps-2 pe-2 "
-                        style="background-color: orangered;border: 1px solid orangered; border-radius: 5px;">
-                        Fire</p>
+                        style="background-color: #30a7d7;border: 1px solid #30a7d7; border-radius: 5px;">
+                        water</p>
                     </div>
-                    <div class="cardline2 p-0 ms-2 w-75 d-flex justify-content-between">
+                    <div class="cardline2 p-0 ms-4 w-50 d-flex justify-content-between">
                       <p class="m-0 p-0">Abilities</p>
                       <p class="m-0 p-0">Blaze</p>
                     </div>
@@ -343,20 +407,20 @@
                 </div>
               </div>
 
-              <div class="slider-card">
+              <div class="slider-card w-auto">
                 <div class="d-flex justify-content-center align-items-center">
                   <img src="../public/assets/heros/Fuecoco-909.png" class="card-img-top" alt="...">
                 </div>
                 <div class="card-body bg-dark text-white">
-                  <h4 class="card-text text-start p-2 mb-0">Fuecoco</h4>
+                  <h6 class="card-text text-start p-2 mb-0">Fuecoco</h6>
                   <div class="add-text">
-                    <div class="cardline1 p-0 ms-2 mb-2 w-75 d-flex justify-content-between">
-                      <p class="m-0 p-0">Type</p>
+                    <div class="cardline1 p-0 ms-4 mb-2 w-50 d-flex justify-content-between">
+                      <p class="m-0 p-0"> Type</p>
                       <p class="m-0 ps-2 pe-2 "
                         style="background-color: orangered;border: 1px solid orangered; border-radius: 5px;">
                         Fire</p>
                     </div>
-                    <div class="cardline2 p-0 ms-2 w-75 d-flex justify-content-between">
+                    <div class="cardline2 p-0 ms-4 w-50 d-flex justify-content-between">
                       <p class="m-0 p-0">Abilities</p>
                       <p class="m-0 p-0">Blaze</p>
                     </div>
@@ -365,20 +429,20 @@
                 </div>
               </div>
 
-              <div class="slider-card">
+              <div class="slider-card w-auto">
                 <div class="d-flex justify-content-center align-items-center">
                   <img src="../public/assets/heros/Gible-443.png" class="card-img-top" alt="...">
                 </div>
                 <div class="card-body bg-dark text-white">
-                  <h4 class="card-text text-start p-2 mb-0">Gible</h4>
+                  <h6 class="card-text text-start p-2 mb-0">Gible</h6>
                   <div class="add-text">
-                    <div class="cardline1 p-0 ms-2 mb-2 w-75 d-flex justify-content-between">
-                      <p class="m-0 p-0">Type</p>
+                    <div class="cardline1 p-0 ms-4 mb-2 w-50 d-flex justify-content-between">
+                      <p class="m-0 p-0"> Type</p>
                       <p class="m-0 ps-2 pe-2 "
-                        style="background-color: orangered;border: 1px solid orangered; border-radius: 5px;">
-                        Fire</p>
+                        style="background-color: #4dad5b;border: 1px solid #4dad5b; border-radius: 5px;">
+                        grass</p>
                     </div>
-                    <div class="cardline2 p-0 ms-2 w-75 d-flex justify-content-between">
+                    <div class="cardline2 p-0 ms-4 w-50 d-flex justify-content-between">
                       <p class="m-0 p-0">Abilities</p>
                       <p class="m-0 p-0">Blaze</p>
                     </div>
@@ -387,20 +451,20 @@
                 </div>
               </div>
 
-              <div class="slider-card">
+              <div class="slider-card w-auto">
                 <div class="d-flex justify-content-center align-items-center">
                   <img src="../public/assets/heros/Grotle-388.png" class="card-img-top" alt="...">
                 </div>
                 <div class="card-body bg-dark text-white">
-                  <h4 class="card-text text-start p-2 mb-0">Grotle</h4>
+                  <h6 class="card-text text-start p-2 mb-0">Grotle</h6>
                   <div class="add-text">
-                    <div class="cardline1 p-0 ms-2 mb-2 w-75 d-flex justify-content-between">
-                      <p class="m-0 p-0">Type</p>
+                    <div class="cardline1 p-0 ms-4 mb-2 w-50 d-flex justify-content-between">
+                      <p class="m-0 p-0"> Type</p>
                       <p class="m-0 ps-2 pe-2 "
                         style="background-color: orangered;border: 1px solid orangered; border-radius: 5px;">
                         Fire</p>
                     </div>
-                    <div class="cardline2 p-0 ms-2 w-75 d-flex justify-content-between">
+                    <div class="cardline2 p-0 ms-4 w-50 d-flex justify-content-between">
                       <p class="m-0 p-0">Abilities</p>
                       <p class="m-0 p-0">Blaze</p>
                     </div>
@@ -409,20 +473,20 @@
                 </div>
               </div>
 
-              <div class="slider-card">
+              <div class="slider-card w-auto">
                 <div class="d-flex justify-content-center align-items-center">
                   <img src="../public/assets/heros/shuckle-213.png" class="card-img-top" alt="...">
                 </div>
                 <div class="card-body bg-dark text-white">
-                  <h4 class="card-text text-start p-2 mb-0">Shuckle</h4>
+                  <h6 class="card-text text-start p-2 mb-0">Shuckle</h6>
                   <div class="add-text">
-                    <div class="cardline1 p-0 ms-2 mb-2 w-75 d-flex justify-content-between">
-                      <p class="m-0 p-0">Type</p>
+                    <div class="cardline1 p-0 ms-4 mb-2 w-50 d-flex justify-content-between">
+                      <p class="m-0 p-0"> Type</p>
                       <p class="m-0 ps-2 pe-2 "
-                        style="background-color: orangered;border: 1px solid orangered; border-radius: 5px;">
-                        Fire</p>
+                        style="background-color: #30a7d7;border: 1px solid #30a7d7; border-radius: 5px;">
+                        water</p>
                     </div>
-                    <div class="cardline2 p-0 ms-2 w-75 d-flex justify-content-between">
+                    <div class="cardline2 p-0 ms-4 w-50 d-flex justify-content-between">
                       <p class="m-0 p-0">Abilities</p>
                       <p class="m-0 p-0">Blaze</p>
                     </div>
@@ -431,20 +495,20 @@
                 </div>
               </div>
 
-              <div class="slider-card">
+              <div class="slider-card w-auto">
                 <div class="d-flex justify-content-center align-items-center">
                   <img src="../public/assets/heros/Sylveon-700.png" class="card-img-top" alt="...">
                 </div>
                 <div class="card-body bg-dark text-white">
-                  <h4 class="card-text text-start p-2 mb-0">Sylveon</h4>
+                  <h6 class="card-text text-start p-2 mb-0">Sylveon</h6>
                   <div class="add-text">
-                    <div class="cardline1 p-0 ms-2 mb-2 w-75 d-flex justify-content-between">
-                      <p class="m-0 p-0">Type</p>
+                    <div class="cardline1 p-0 ms-4 mb-2 w-50 d-flex justify-content-between">
+                      <p class="m-0 p-0"> Type</p>
                       <p class="m-0 ps-2 pe-2 "
-                        style="background-color: orangered;border: 1px solid orangered; border-radius: 5px;">
-                        Fire</p>
+                        style="background-color: #e6bc2f;border: 1px solid #e6bc2f; border-radius: 5px;">
+                        flame</p>
                     </div>
-                    <div class="cardline2 p-0 ms-2 w-75 d-flex justify-content-between">
+                    <div class="cardline2 p-0 ms-4 w-50 d-flex justify-content-between">
                       <p class="m-0 p-0">Abilities</p>
                       <p class="m-0 p-0">Blaze</p>
                     </div>
@@ -545,6 +609,10 @@
     </div>
   </main>
 
+  <!-- main section ends -->
+
+
+  <!-- footer starts -->
   <footer>
     <div class="footer">
       <div class="container-footer container-fluid pt-4">
@@ -602,22 +670,22 @@
 
   </footer>
 
+  <!-- footer ends -->
 
-  <script src="script.js"></script>
 
-  <!-- Font awesome -->
-  <script src="https://kit.fontawesome.com/8782d71a76.js" crossorigin="anonymous"></script>
 
   <!-- bootstrap scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
     integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
     crossorigin="anonymous"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
 
   <!-- old bootstrap scripts -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

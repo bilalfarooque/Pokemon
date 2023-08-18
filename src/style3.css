@@ -228,6 +228,10 @@ button.btn {
 @media (min-width: 768px) and (max-width: 991px) {
   .nav-container {
     background-image: radial-gradient(#343434 15%, #1e1e1e 60%);
+    /* position: -webkit-sticky;
+    position: sticky;
+    top: -600px;
+    z-index: -1; */
   }
 
   .navbar-nav {
